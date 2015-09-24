@@ -11,6 +11,40 @@ html
     link(rel="icon", type="image/jpeg", href="assets/favicon32.jpg", sizes="32x32")
     link(rel="icon", type="image/png", href="assets/favicon16.png", sizes="16x16")
   body
-    h1 Testing
+    ul#menu
+      li(data-menuanchor="welcome")
+        a(href="#welcome") Welcome
+      li(data-menuanchor="about")
+        a(href="#about") About Me
+      li(data-menuanchor="projects")
+        a(href="#projects") Projects
+      li(data-menuanchor="contact")
+        a(href="#contact") Contact Me
+    #fullpage
+      #section1.section
+        p welcome
+      #section2.section
+        p about me
+      #section3.section
+        .slide(data-anchor="samplepad")
+          .intro
+            p samplepad
+        .slide(data-anchor="goanddo")
+          .intro
+            p goanddo
+        .slide(data-anchor="hitme")
+          .intro
+            p hitme
+        .slide(data-anchor="biscuits")
+          .intro
+            p biscuits
+        .slide(data-anchor="mkwhack")
+          .intro
+            p mkwhack
+        .slide(data-anchor="slipabeat")
+          .intro
+            p slipabeat
+      #section4.section.fp-auto-height
+        p contact me
     script(src='lib/build.js')
     script(src='main.js')
