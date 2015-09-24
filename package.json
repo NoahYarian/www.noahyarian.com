@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Testing, testing, 1, 2...check! TOAST! TOAST!\" && exit 1",
+    "start": "npm install && gulp"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/NoahYarian/www.noahyarian.com/issues"
   },
-  "homepage": "https://github.com/NoahYarian/www.noahyarian.com#readme"
+  "homepage": "https://github.com/NoahYarian/www.noahyarian.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.9.6",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-main-bower-files": "^1.2.1",
+    "gulp-sass": "^2.0.4"
+  }
 }
