@@ -1,3 +1,54 @@
-@import '_styles/fullpage-examples'
+@import '_styles/fullpage-examples';
+@import '_styles/palette';
+
+/* Coolors Exported Palette - coolors.co/385c75-8ea4a7-dcdeb6-f4a959-c08a81 */
+
+$color1: #385c75; //rgba(56, 92, 117, 100)
+$color2: #8ea4a7; //rgba(142, 164, 167, 100)
+$color3: #dcdeb6; //rgba(220, 222, 182, 100)
+$color4: #f4a959; //rgba(244, 169, 89, 100)
+$color5: #c08a81; //rgba(192, 138, 129, 100)
 
 
+h1 {
+  font-size: 9em;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95%;
+  padding-top: 60px;
+  * {
+    margin: 0 auto;
+    width: 100%;
+  }
+  p {
+    width: 80%;
+  }
+}
+.screenshot {
+  height: 300px;
+  width: 500px;
+  border: 2px solid red;
+  // margin: 60px auto 7px;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-around;
+  width: 50%
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+  border: 2px solid black;
+}

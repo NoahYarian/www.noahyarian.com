@@ -101,6 +101,8 @@ gulp.task('browser-sync', function() {
 gulp.task('copy', function () {
   gulp.src(['src/assets/**/*'])
     .pipe(gulp.dest('public/assets'));
+  gulp.src(['bower_components/font-awesome/fonts/*.*'])
+    .pipe(gulp.dest('public/fonts'));
 });
 
 gulp.task('build:dev', ['jade:dev', 'sass:dev', 'js:dev', 'bower', 'copy']);
