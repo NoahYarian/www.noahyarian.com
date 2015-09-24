@@ -4,7 +4,7 @@ console.log('testing!')
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    sectionsColor: ['#385c75', '#8ea4a7', '#dcdeb6', '#f4a959'],
+    sectionsColor: ['#5E412F', '#FCEBB6', '#78C0A8', '#F07818'],
     anchors: ['welcome', 'about', 'projects', 'contact'],
     menu: '#menu',
     scrollingSpeed: 1000

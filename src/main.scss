@@ -1,23 +1,36 @@
 @import '_styles/fullpage-examples';
 @import '_styles/palette';
 
-/* Coolors Exported Palette - coolors.co/385c75-8ea4a7-dcdeb6-f4a959-c08a81 */
-
-$color1: #385c75; //rgba(56, 92, 117, 100)
-$color2: #8ea4a7; //rgba(142, 164, 167, 100)
-$color3: #dcdeb6; //rgba(220, 222, 182, 100)
-$color4: #f4a959; //rgba(244, 169, 89, 100)
-$color5: #c08a81; //rgba(192, 138, 129, 100)
-
+$color1: #5E412F;
+$color2: #FCEBB6;
+$color3: #78C0A8;
+$color4: #F07818;
+$color5: #F0A830;
 
 h1 {
   font-size: 9em;
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  font-weight: 700;
+  color: $color2;
+}
+
+h2 {
+  font-family: 'Homemade Apple', sans-serif;
+  font-size: 1.5em;
+  color: $color4;
 }
 
 h3 {
   font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: black;
 }
 
 .intro {
@@ -37,8 +50,7 @@ h3 {
 .screenshot {
   height: 300px;
   width: 500px;
-  border: 2px solid red;
-  // margin: 60px auto 7px;
+  border: 2px solid black;
 }
 
 .tech {
@@ -51,4 +63,16 @@ h3 {
   height: 64px;
   width: 64px;
   border: 2px solid black;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 72%;
+  margin: 20px auto;
+}
+
+i:hover {
+  cursor: pointer;
+  color: $color2;
 }
