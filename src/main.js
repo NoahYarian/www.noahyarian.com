@@ -1,7 +1,3 @@
-// main.js
-
-console.log('testing!')
-
 $(document).ready(function() {
   $('#fullpage').fullpage({
     sectionsColor: ['#5E412F', '#78C0A8', '#FCEBB6', '#F07818'],
