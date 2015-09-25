@@ -4,11 +4,12 @@ console.log('testing!')
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    sectionsColor: ['#5E412F', '#FCEBB6', '#78C0A8', '#F07818'],
+    sectionsColor: ['#5E412F', '#78C0A8', '#FCEBB6', '#F07818'],
     anchors: ['welcome', 'about', 'projects', 'contact'],
     menu: '#menu',
     scrollingSpeed: 1000,
-    scrollOverflow: true
+    scrollOverflow: true,
+    paddingBottom: "10px"
   });
 });
 

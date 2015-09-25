@@ -29,9 +29,9 @@ h3 {
   font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: white;
+  color: $color5;
   &:hover {
-    text-shadow: 2px 2px rgba(0,0,0,.5);
+    text-shadow: 1px 1px rgba(0,0,0,0.8);
   }
 }
 
@@ -50,6 +50,10 @@ a {
   }
 }
 
+#section2 h3 {
+  color: $color2;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -66,10 +70,35 @@ a {
 .screenshot {
   height: 300px;
   width: 500px;
-  border: 1px solid black;
-  background-image: url('assets/samplepad.png');
-  background-size: contain;
+  margin-bottom: 10px;
+  border: 1px solid #282828;
+  background-size: cover;
 }
+
+#samplepad-img {
+  background-image: url('assets/samplepad.png');
+}
+
+#goanddo-img {
+  background-image: url('assets/goanddo.png');
+}
+
+#hitme-img {
+  background-image: url('assets/hitme.png');
+}
+
+#biscuits-img {
+  background-image: url('assets/biscuits.png');
+}
+
+#mk-img {
+  background-image: url('assets/mk.png');
+}
+
+#slipabeat-img {
+  background-image: url('assets/slipabeat.png');
+}
+
 
 .hover {
   height: 300px;
@@ -115,19 +144,28 @@ a {
 }
 
 .blurb {
-  margin: 10px auto;
+  // margin: 10px auto;
 }
 
 .tech {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 80%;
-  margin-bottom: 5px;
-  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .logo {
   height: 35px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 15px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .node {
@@ -151,5 +189,5 @@ a {
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
 }
