@@ -5,9 +5,12 @@ html
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name="description" content="Portfolio website for Noah Yarian, a full stack developer with a background in system administration and consulting")
-    title Noah Yarian | DevOperator
+    title Noah Yarian | Portfolio
     link(rel='stylesheet', href='lib/build.css')
     link(href='https://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat:400,700' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' href='lib/gh-fork-ribbon.css')
+    //if lt IE 9
+      link(rel='stylesheet' href='lib/gh-fork-ribbon.ie.css')
     link(rel='stylesheet', href='main.css')
     link(rel="icon", type="image/jpeg", href="assets/favicon32.jpg", sizes="32x32")
     link(rel="icon", type="image/png", href="assets/favicon16.png", sizes="16x16")
@@ -23,6 +26,9 @@ html
         a(href="#contact") Contact Me
     #fullpage
       #section1.section
+        .github-fork-ribbon-wrapper.right
+          .github-fork-ribbon
+            a(href="https://github.com/NoahYarian/www.noahyarian.com") Fork me on GitHub
         h1 NOAH YARIAN
         h2 a portfolio
       #section2.section
@@ -41,102 +47,156 @@ html
                     .hover-link
                       i.fa.fa-5x.fa-github
                       p View code
-
                   a(href='http://samplepad.noahyarian.com' title='See it live')
                     .hover-link
                       i.fa.fa-5x.fa-external-link
                       p View website
-            //- img(src='assets/samplepad.png')
-            h3 SamplePad
-            p They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
+            a(href='http://samplepad.noahyarian.com' title='See it live')
+              h3 SamplePad
+            p.blurb They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
               | You know there isn't a hospital bar, Mother. Well, this is why people hate hospitals.
             .tech
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
-              //- img(src='assets/logos/node.svg')
-              //- img(src='assets/logos/express.svg')
-              //- img(src='assets/logos/mongo.svg')
-              //- img(src='assets/logos/angular.svg')
-              //- img(src='assets/logos/jquery.svg')
-              //- img(src='assets/logos/bootstrap.svg')
+              img.node.logo(src='assets/logos/nodejs-white.svg' alt='Node.js')
+              img.express.logo(src='assets/logos/express.svg' alt='Express')
+              img.logo(src='assets/logos/mongodb.svg' alt='MongoDB')
+              img.logo(src='assets/logos/angular.svg' alt='AngularJS')
+              img.logo(src='assets/logos/jquery.svg' alt='jQuery')
+              img.logo(src='assets/logos/bootstrap.svg' alt='Bootstrap')
         .slide(data-anchor="goanddo")
           .intro
             .screenshot
-            h3 Go and Do
-            p They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
+              .hover.hidden
+                .links
+                  a(href='https://github.com/NoahYarian/samplepad' title='View on GitHub')
+                    .hover-link
+                      i.fa.fa-5x.fa-github
+                      p View code
+                  a(href='http://samplepad.noahyarian.com' title='See it live')
+                    .hover-link
+                      i.fa.fa-5x.fa-external-link
+                      p View website
+            a(href='http://samplepad.noahyarian.com' title='See it live')
+              h3 SamplePad
+            p.blurb They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
               | You know there isn't a hospital bar, Mother. Well, this is why people hate hospitals.
             .tech
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
+              img.node.logo(src='assets/logos/nodejs-white.svg' alt='Node.js')
+              img.express.logo(src='assets/logos/express.svg' alt='Express')
+              img.logo(src='assets/logos/mongodb.svg' alt='MongoDB')
+              img.logo(src='assets/logos/angular.svg' alt='AngularJS')
+              img.logo(src='assets/logos/jquery.svg' alt='jQuery')
+              img.logo(src='assets/logos/bootstrap.svg' alt='Bootstrap')
         .slide(data-anchor="hitme")
           .intro
             .screenshot
-            h3 Hit Me!
-            p They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
+              .hover.hidden
+                .links
+                  a(href='https://github.com/NoahYarian/samplepad' title='View on GitHub')
+                    .hover-link
+                      i.fa.fa-5x.fa-github
+                      p View code
+                  a(href='http://samplepad.noahyarian.com' title='See it live')
+                    .hover-link
+                      i.fa.fa-5x.fa-external-link
+                      p View website
+            a(href='http://samplepad.noahyarian.com' title='See it live')
+              h3 SamplePad
+            p.blurb They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
               | You know there isn't a hospital bar, Mother. Well, this is why people hate hospitals.
             .tech
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
+              img.node.logo(src='assets/logos/nodejs-white.svg' alt='Node.js')
+              img.express.logo(src='assets/logos/express.svg' alt='Express')
+              img.logo(src='assets/logos/mongodb.svg' alt='MongoDB')
+              img.logo(src='assets/logos/angular.svg' alt='AngularJS')
+              img.logo(src='assets/logos/jquery.svg' alt='jQuery')
+              img.logo(src='assets/logos/bootstrap.svg' alt='Bootstrap')
         .slide(data-anchor="biscuits")
           .intro
             .screenshot
-            h3 Biscuits: Rebuttered
-            p They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
+              .hover.hidden
+                .links
+                  a(href='https://github.com/NoahYarian/samplepad' title='View on GitHub')
+                    .hover-link
+                      i.fa.fa-5x.fa-github
+                      p View code
+                  a(href='http://samplepad.noahyarian.com' title='See it live')
+                    .hover-link
+                      i.fa.fa-5x.fa-external-link
+                      p View website
+            a(href='http://samplepad.noahyarian.com' title='See it live')
+              h3 SamplePad
+            p.blurb They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
               | You know there isn't a hospital bar, Mother. Well, this is why people hate hospitals.
             .tech
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
+              img.node.logo(src='assets/logos/nodejs-white.svg' alt='Node.js')
+              img.express.logo(src='assets/logos/express.svg' alt='Express')
+              img.logo(src='assets/logos/mongodb.svg' alt='MongoDB')
+              img.logo(src='assets/logos/angular.svg' alt='AngularJS')
+              img.logo(src='assets/logos/jquery.svg' alt='jQuery')
+              img.logo(src='assets/logos/bootstrap.svg' alt='Bootstrap')
         .slide(data-anchor="mkwhack")
           .intro
             .screenshot
-            h3 MK Whack-A-Mole
-            p They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
+              .hover.hidden
+                .links
+                  a(href='https://github.com/NoahYarian/samplepad' title='View on GitHub')
+                    .hover-link
+                      i.fa.fa-5x.fa-github
+                      p View code
+                  a(href='http://samplepad.noahyarian.com' title='See it live')
+                    .hover-link
+                      i.fa.fa-5x.fa-external-link
+                      p View website
+            a(href='http://samplepad.noahyarian.com' title='See it live')
+              h3 SamplePad
+            p.blurb They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
               | You know there isn't a hospital bar, Mother. Well, this is why people hate hospitals.
             .tech
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
+              img.node.logo(src='assets/logos/nodejs-white.svg' alt='Node.js')
+              img.express.logo(src='assets/logos/express.svg' alt='Express')
+              img.logo(src='assets/logos/mongodb.svg' alt='MongoDB')
+              img.logo(src='assets/logos/angular.svg' alt='AngularJS')
+              img.logo(src='assets/logos/jquery.svg' alt='jQuery')
+              img.logo(src='assets/logos/bootstrap.svg' alt='Bootstrap')
         .slide(data-anchor="slipabeat")
           .intro
             .screenshot
-            h3 SlipaBeat
-            p They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
+              .hover.hidden
+                .links
+                  a(href='https://github.com/NoahYarian/samplepad' title='View on GitHub')
+                    .hover-link
+                      i.fa.fa-5x.fa-github
+                      p View code
+                  a(href='http://samplepad.noahyarian.com' title='See it live')
+                    .hover-link
+                      i.fa.fa-5x.fa-external-link
+                      p View website
+            a(href='http://samplepad.noahyarian.com' title='See it live')
+              h3 SamplePad
+            p.blurb They frame my junk. Oh, COME ON! What do you think about Sudden Valley? It sounds like a salad dressing, but for some reason I don't want to eat it. I'll be in the hospital bar.
               | You know there isn't a hospital bar, Mother. Well, this is why people hate hospitals.
             .tech
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
-              .logo
+              img.node.logo(src='assets/logos/nodejs-white.svg' alt='Node.js')
+              img.express.logo(src='assets/logos/express.svg' alt='Express')
+              img.logo(src='assets/logos/mongodb.svg' alt='MongoDB')
+              img.logo(src='assets/logos/angular.svg' alt='AngularJS')
+              img.logo(src='assets/logos/jquery.svg' alt='jQuery')
+              img.logo(src='assets/logos/bootstrap.svg' alt='Bootstrap')
       #section4.section.fp-auto-height
         .social
-          i.fa.fa-5x.fa-github
-          i.fa.fa-5x.fa-linkedin
-          i.fa.fa-5x.fa-slack
-          i.fa.fa-5x.fa-spotify
+          a(href='http://github.com/NoahYarian' title='Check me out on GitHub')
+            i.fa.fa-5x.fa-github
+          a(href='https://www.linkedin.com/in/noahyarian' title='Connect with me on LinkedIn')
+            i.fa.fa-5x.fa-linkedin
+          //- a(href='http://github.com/NoahYarian')
+          //-   i.fa.fa-5x.fa-slack
+          //- a(href='https://open.spotify.com/user/capitalistocrat' title="See what I've been listening to")
+          //-   i.fa.fa-5x.fa-spotify
           //- i.fa.fa-5x.fa-twitter
-          i.fa.fa-5x.fa-codepen
-          i.fa.fa-5x.fa-envelope
+          a(href='http://codepen.io/NoahYarian/' title='Check me out on CodePen')
+            i.fa.fa-5x.fa-codepen
+          a(href='mailto:Noah.Yarian@gmail.com' title='Email me directly')
+            i.fa.fa-5x.fa-envelope
           //- i.fa.fa-5x.fa-steam
           //- i.fa.fa-5x.fa-facebook-official
     script(src='lib/build.js')

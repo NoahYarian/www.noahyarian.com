@@ -104,6 +104,8 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('public/assets'));
   gulp.src(['bower_components/font-awesome/fonts/*.*'])
     .pipe(gulp.dest('public/fonts'));
+  gulp.src(['bower_components/github-fork-ribbon-css/gh-fork-ribbon.*'])
+    .pipe(gulp.dest('public/lib'));
 });
 
 gulp.task('build:dev', ['jade:dev', 'sass:dev', 'js:dev', 'bower', 'copy']);
