@@ -78,6 +78,12 @@ a {
     }
   }
 }
+#section3 a {
+  color: $color3;
+  &:hover {
+    text-shadow: 1px 1px rgba(0,0,0,0.8);
+  }
+}
 
 .intro {
   display: flex;
