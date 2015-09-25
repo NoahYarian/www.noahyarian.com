@@ -29,7 +29,7 @@ h3 {
   font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: $color5;
+  color: $color4;
   &:hover {
     text-shadow: 1px 1px rgba(0,0,0,0.8);
   }
@@ -50,8 +50,33 @@ a {
   }
 }
 
-#section2 h3 {
-  color: $color2;
+.section h3:hover {
+  text-shadow: 1px 1px rgba(0,0,0,0.8);
+}
+
+#section2 {
+  h3 {
+    color: $color2;
+    margin-top: 20px;
+    &:hover {
+      text-shadow: none;
+    }
+  }
+  img {
+    border-radius: 50%;
+  }
+  p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    line-height: 1.5;
+    a {
+      color: $color2;
+      &:hover {
+        text-shadow: 1px 1px rgba(0,0,0,0.8);
+      }
+    }
+  }
 }
 
 .intro {
