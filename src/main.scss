@@ -39,7 +39,7 @@ p {
   justify-content: space-between;
   height: 95%;
   padding-top: 60px;
-  * {
+  &> * {
     margin: 0 auto;
     width: 100%;
   }
@@ -50,19 +50,66 @@ p {
 .screenshot {
   height: 300px;
   width: 500px;
-  border: 2px solid black;
+  border: 1px solid black;
+  background-image: url('assets/samplepad.png');
+  background-size: contain;
+}
+
+.hover {
+  height: 300px;
+  width: 500px;
+  background: rgba(128,128,128,0.5);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hover-link {
+  border-radius: 15px;
+  height: 164px;
+  width: 153px;
+  background: rgba(100,100,100,0.8);
+  color: white;
+  p {
+    font-size: 1em;
+    color: white;
+  }
+  .fa-external-link {
+    margin-right: -12px;
+  }
+  .fa-5x {
+    margin-top: 27px;
+    margin-bottom: 7px;
+  }
+  a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+    &:visited {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: auto;
+    }
+  }
 }
 
 .tech {
   display: flex;
   justify-content: space-around;
-  width: 50%
+  width: 50%;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .logo {
   height: 64px;
   width: 64px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .social {
@@ -70,9 +117,12 @@ p {
   justify-content: space-between;
   width: 72%;
   margin: 20px auto;
+    i:hover {
+    cursor: pointer;
+    color: $color2;
+  }
 }
 
-i:hover {
-  cursor: pointer;
-  color: $color2;
+.hidden {
+  display: none;
 }

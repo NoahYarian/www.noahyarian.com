@@ -77,6 +77,7 @@ gulp.task('bower', function () {
   gulp
     .src([
       'bower_components/jquery/dist/jquery.min.js',
+      'bower_components/fullpage.js/vendors/jquery.slimscroll.min.js',
       'bower_components/fullpage.js/jquery.fullPage.min.js'
     ])
     .pipe($.concat('build.js'))
